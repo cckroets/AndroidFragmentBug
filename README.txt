@@ -9,7 +9,6 @@ MainActivity (FragmentContainerView)
 1) Navigate from FirstTopLevelFragment -> SecondTopLevelFragment via a Fragment replace() by clicking on the Fab button. 
 2) Click back/previous . Observe a crash
 
-<code>
 Process: com.example.myapplication, PID: 3643
 java.lang.IllegalArgumentException: No view found for id 0x708875b7 (unknown) for fragment NestedInComposeFragment{9df0b2b} (ae4356e1-9543-4636-8326-0c425188d5bd id=0x708875b7 tag=1887991223)
 at androidx.fragment.app.FragmentStateManager.createView(FragmentStateManager.java:559)
@@ -32,4 +31,3 @@ at com.example.myapplication.SecondFragment.onViewCreated$lambda$0(SecondFragmen
 at com.example.myapplication.SecondFragment.$r8$lambda$D56Ez4I3ChfufRinJh-Sz7jy9iI(Unknown Source:0)
 at com.example.myapplication.SecondFragment$$ExternalSyntheticLambda0.onClick(D8$$SyntheticClass:0)
 at android.view.View.performClick(View.java:7448)
-</code>
