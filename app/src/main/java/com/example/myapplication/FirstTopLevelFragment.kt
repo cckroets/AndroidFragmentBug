@@ -17,11 +17,9 @@ class FirstTopLevelFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return ComposeView(requireContext()).apply {
-            setContent {
-                AndroidFragment<NestedInComposeFragment>()
-            }
+    ): View = (inflater.inflate(R.layout.fragment_first, container, false) as ComposeView).apply {
+        setContent {
+            AndroidFragment<NestedInComposeFragment>()
         }
     }
 }
